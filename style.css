@@ -5,7 +5,7 @@ body{
 }
 
 h3{
-    font-size: 1em;
+    font-size: 16px;
 }
 
 /*header*/
@@ -73,7 +73,7 @@ header ul li {
 .icon_map{
     font-size: 25px;
     background-color: #f2f2f2;
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 15px 0 0 15px;
     padding: 10px 10px;
     width: 30px;
     height: 25px;
@@ -90,7 +90,7 @@ header ul li {
     width : 165px;
     font-family: "Raleway", "Sans serif";
     font-weight:bold;
-    padding: 0 1.5em;
+    padding: 0 24px;
     font-size:13px;
 }
 
@@ -130,13 +130,13 @@ header ul li {
     display: flex;
     flex-wrap:wrap;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 32px;
 }
 
 .bar_filtre{
     display:flex;
     align-items: center;
-    margin-right: 2em;
+    margin-right: 32px;
     border: 2px solid#F2F2F2;
     border-radius: 35px;
     font-weight: bold;
@@ -153,14 +153,14 @@ header ul li {
 .titre{
     font-family: "Raleway", "Sans serif";
     font-weight: bold;
-    padding-right: 1.5em;
-    padding-left: 0.5em;
+    padding-right: 23px;
+    padding-left: 8px;
     cursor: pointer;
 }
 
 .titre_filtres{
-    font-size: 1.3em;
-    margin: 0 1.8em 0 0;
+    font-size: 20px;
+    margin: 0 28px 0 0;
 }
 
 .filtres a {
@@ -182,7 +182,7 @@ header ul li {
 /*header-info*/
 
 .info {
-    margin-top: 1em;
+    margin-top: 16px;
     display: flex;
     align-items: center;
 }
@@ -199,7 +199,7 @@ header ul li {
 }
   
 .info_text{
-    margin-left: 1em;
+    margin-left: 16px;
 }
 
 /*main - hebergement*/
@@ -294,7 +294,7 @@ main{
 }
 
 .fa-chart-line{
-    font-size: 2em;
+    font-size: 32px;
     color:black;
 }
 
@@ -553,7 +553,7 @@ main{
 
     .filtres{
         margin-left: 2.5%;
-        gap: 1rem;
+        gap: 15px;
     }
 
     .bar_filtre{
@@ -568,7 +568,6 @@ main{
         width:50%;
         margin-left:18%;
         object-fit: cover;
-        box-sizing: center;
         justify-content: center;
     }
     .responsive_tel{
@@ -651,7 +650,7 @@ main{
     .container_act{
         flex-wrap: wrap;
         /* Écart entre les cartes activités */
-        gap: 1.5rem;
+        gap: 20px;
         height: 100%;
     }
 
@@ -713,7 +712,7 @@ main{
         height: 27px;
         padding: 0;
         width : 135px;
-        padding: 0 1em;
+        padding: 0 16px;
         font-size:13px;
     }
 
@@ -726,3 +725,19 @@ main{
     }
     
 }
+
+@media screen and (max-width:480px){
+
+.pop_img{
+    width: 120px;
+}
+
+}
+
+@media screen and (max-width:380px){
+
+    .pop_img{
+        width: 100px;
+    }
+    
+    }
