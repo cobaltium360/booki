@@ -299,12 +299,14 @@ main{
 }
 
 .pop_img{
-    width:35%;
+    width:33%;
+    min-width: 33%;
     height: 165px;
     border-radius : 15px 0 0 15px;
     padding : 5px;
     object-fit: cover;
 }
+
 
 .pop_hotel a{
     display:flex;
@@ -475,8 +477,9 @@ main{
     }
 
     .pop_img{
-        width:50%;
-        height: 231.5px;
+        width:45%;
+        min-width: 45%;
+        height: 200px;
     }
 
     main{
@@ -616,6 +619,7 @@ main{
         border-radius: 0px;
     }
 
+
     .article_hebergement{
         display: flex;
         flex-direction: column;
@@ -726,18 +730,3 @@ main{
     
 }
 
-@media screen and (max-width:480px){
-
-.pop_img{
-    width: 120px;
-}
-
-}
-
-@media screen and (max-width:380px){
-
-    .pop_img{
-        width: 100px;
-    }
-    
-    }
