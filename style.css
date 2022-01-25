@@ -357,6 +357,7 @@ main{
     box-shadow: 0 5px 16px #0000002e;
     box-sizing: border-box;
     width :23%;
+    max-height:592px;
     border-radius: 15px ;
     -webkit-transition: all 1s ease; /*safari et chrome*/
     -moz-transition: all 1s ease; /*firefox*/
@@ -385,7 +386,6 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height:592px;
     align-content: space-between;
     justify-content: space-between;
     height: 592px;
