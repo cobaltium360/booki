@@ -385,6 +385,7 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    max-height:562px;
     align-content: space-between;
     justify-content: space-between;
     height: 592px;
