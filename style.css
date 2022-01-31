@@ -223,7 +223,6 @@ main{
     border-radius: 20px;
     padding: 5px;
     box-sizing: border-box;
-    margin: 0 5px 20px 5px;
     box-shadow: 0 5px 16px #0000002e;
     -webkit-transition: all 1s ease; /*safari et chrome*/
     -moz-transition: all 1s ease; /*firefox*/
@@ -254,6 +253,7 @@ main{
 .article_hebergement{
     display: flex;
     flex-wrap: wrap;
+    gap:15px;
 }
 
 .hotel a{
