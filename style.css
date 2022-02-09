@@ -1,7 +1,7 @@
 body{ 
     font-family: 'Raleway', sans-serif;
     margin:0;
-    padding: 0;
+    padding:0;
 }
 
 h3{
@@ -12,17 +12,19 @@ h3{
 
 header{
     margin:auto;
-    width: 95%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .container_header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .logo{
-    cursor : pointer ;
+    max-width: 130px;
 }
 
 .header_btn {
@@ -37,21 +39,29 @@ header ul {
     margin: 0;
     margin-left: auto;
     color: #0065fc;
+    box-sizing: border-box;
 }
 
 header ul li a {
     text-decoration: none;
     color : black;
+    padding: 30px 25px;
+    display: block;
+    border-top: 2px solid transparent;
 }
 
 .header_act_he:hover {
     border-top: 2px solid #0065fc;
-    padding-top: 35.5px;
     color: #0065fc;
 }
 
-header ul li {
-    margin-left: 28px;
+header ul li{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 24px;
+    margin: 5px 0;
 }
 
 /*header-seach*/
@@ -77,7 +87,13 @@ header ul li {
     padding: 10px 10px;
     width: 30px;
     height: 25px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-map-marker-alt{
+    font-size: 17px;
 }
 
 .input_search{
@@ -206,7 +222,9 @@ header ul li {
 
 main{
     margin: auto;
-    width: 95%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .hebergement{
@@ -214,7 +232,7 @@ main{
     border-radius: 15px;
     padding: 20px;
     margin: 0 25px 0 0;
-    width: 70%;
+    width: 62%;
 }
 
 .hotel{
@@ -224,11 +242,27 @@ main{
     padding: 5px;
     box-sizing: border-box;
     box-shadow: 0 5px 16px #0000002e;
-    -webkit-transition: all 1s ease; /*safari et chrome*/
-    -moz-transition: all 1s ease; /*firefox*/
-    -ms-transition: all 1s ease; /*internet explorer 9*/
-    -o-transition: all 1s ease; /*opera*/
-    transition: all 1s ease;
+    -webkit-transition: all .4s ease; /*safari et chrome*/
+    -moz-transition: all .4s ease; /*firefox*/
+    -ms-transition: all .4s ease; /*internet explorer 9*/
+    -o-transition: all .4s ease; /*opera*/
+    transition: all .4s ease;
+}
+
+.hotel h3{
+    margin: 5px 0;
+}
+
+.container_texte_hebergement{
+    padding: 6px 10px;
+}
+
+.star i {
+    font-size: 12px;
+}
+
+.hotel p{
+    margin: 5px 0;
 }
 
 .hotel:hover{
@@ -259,6 +293,7 @@ main{
 .hotel a{
     text-decoration: none;
     color:black;
+    display: block;
 }
 
 .gris{
@@ -284,7 +319,7 @@ main{
     background:#F2F2F2;
     border-radius: 15px;
     padding: 20px;
-    width: 28%;
+    width: 30%;
 }
 
 .populaire_titre{
@@ -293,15 +328,21 @@ main{
     justify-content: space-between;
 }
 
+.populaire_article{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .fa-chart-line{
     font-size: 32px;
     color:black;
 }
 
 .pop_img{
-    width:33%;
-    min-width: 33%;
-    height: 165px;
+    width:35%;
+    min-width: 35%;
+    height: 150px;
     border-radius : 15px 0 0 15px;
     padding : 5px;
     object-fit: cover;
@@ -312,6 +353,7 @@ main{
     display:flex;
     text-decoration: none;
     color: black;
+
 }
 
 .pop_hotel{
@@ -319,24 +361,28 @@ main{
     border-radius:15px;
     box-shadow: 0 5px 16px #0000002e;
     box-sizing: border-box;
-    -webkit-transition: all 1s ease; /*safari et chrome*/
-    -moz-transition: all 1s ease; /*firefox*/
-    -ms-transition: all 1s ease; /*internet explorer 9*/
-    -o-transition: all 1s ease; /*opera*/
-    transition: all 1s ease;
+    -webkit-transition: all .4s ease; /*safari et chrome*/
+    -moz-transition: all .4s ease; /*firefox*/
+    -ms-transition: all .4s ease; /*internet explorer 9*/
+    -o-transition: all .4s ease; /*opera*/
+    transition: all .4s ease;
 }
 
 .text_star{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
-    margin-top : -20px;
-    margin-left : 10px;
+    padding: 20px 10px;
 }
 
-.ouais{
-    margin-top: 15px;
+.text_star h3{
+    margin: 0 0 10px 0;
 }
+
+.text_star p{
+    margin: 0 0 10px 0;
+}
+
 
 .pop_hotel:hover{
     -webkit-transform: scale(1.05); /*safari et chrome*/
@@ -357,13 +403,12 @@ main{
     box-shadow: 0 5px 16px #0000002e;
     box-sizing: border-box;
     width :23%;
-    max-height:592px;
     border-radius: 15px ;
-    -webkit-transition: all 1s ease; /*safari et chrome*/
-    -moz-transition: all 1s ease; /*firefox*/
-    -ms-transition: all 1s ease; /*internet explorer 9*/
-    -o-transition: all 1s ease; /*opera*/
-    transition: all 1s ease;
+    -webkit-transition: all .4s ease; /*safari et chrome*/
+    -moz-transition: all .4s ease; /*firefox*/
+    -ms-transition: all .4s ease; /*internet explorer 9*/
+    -o-transition: all .4s ease; /*opera*/
+    transition: all .4s ease;
 }
 
 .act img{
@@ -380,6 +425,7 @@ main{
 .act a {
     text-decoration: none;
     color: black;
+    display: block;
 }
 
 .container_act{
@@ -388,25 +434,25 @@ main{
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
-    height: 592px;
+    height: 525px;
     margin-top: 30px;
     margin-bottom: 100px;  
 }
 
 .img1{
-    height: 532px;
+    height: 465px;
 }
 
 #img2{
-    height: 225px;
+    height: 200px;
 }
 
 #img3{
-    height: 175px;
+    height: 150px;
 }
 
 #img4{
-    height: 200px;
+    height: 150px;
 }
 
 #img5{
@@ -426,24 +472,29 @@ main{
 .sec_activite{
     display:flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
     margin:auto;
 }
 /*footer*/
 
 .footer{
-    position:relative;
-    bottom:0;
-    right: 0;
-    left: 0;
+
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background: #F2F2F2;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.container_footer{
     background: #F2F2F2;
 }
 
 .footer_div{
-    width:40%;
-    margin-left:3%;
+    width:30%;
     margin-bottom:3%;
     margin-top:20px;
 }
@@ -467,7 +518,26 @@ main{
 
 /* responsive tablette*/
 
-@media screen and (max-width: 992px) and (min-width: 768px){
+@media screen and (max-width:1399px){
+    .footer{
+        width: 95%;
+    }
+
+    .sec_activite{
+        width: 95%;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    header{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 992px){
 
     .hotel{
         width: calc(50% - 10px);
@@ -537,6 +607,10 @@ main{
         width:50%;
     }
 
+    header ul li a{
+        padding: 0 0 15px 0;
+    }
+
     .header_btn{
         width: 100%;
     }
@@ -568,8 +642,9 @@ main{
         margin-left: 2.5%;
     }
 
+    
+
     .logo{
-        width:50%;
         margin-left:18%;
         object-fit: cover;
         justify-content: center;
@@ -598,6 +673,7 @@ main{
 
     .input_search{
         width: auto;
+        height: 43px;
     }
 
     .icon_map{
